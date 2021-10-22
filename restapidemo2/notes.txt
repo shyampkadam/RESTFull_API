@@ -1,10 +1,31 @@
 
-Windows PowerShell
-Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.
-Try the new cross-platform PowerShell https://aka.ms/pscore6
+PS C:\Users\Sagar\Desktop\RESTFull API> http http://localhost:8000/showallemp/
+HTTP/1.1 200 OK
+Content-Length: 162
+Content-Type: application/json
+Date: Fri, 22 Oct 2021 17:33:40 GMT
+Referrer-Policy: same-origin
+Server: WSGIServer/0.2 CPython/3.9.3
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
 
-PS C:\Users\Sagar\Desktop\RESTFull API> http http://127.0.0.1:8000/showallemp
+[
+    {
+        "city": "pune",
+        "fullName": "shyam",
+        "salary": 70000.0
+    },
+    {
+        "city": "nanded",
+        "fullName": "pradip",
+        "salary": 70000.0
+    },
+    {
+        "city": "mumbai",
+        "fullName": "kapil",
+        "salary": 55000.0
+    }
+]
 
 http: error: ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /showallemp (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E2017869A0>: Faishowalled to establish a new connection: [WinError 10061] No connection could be made because the target machine acti estabvely refused it')) while doing a GET request to URL: http://127.0.0.1:8000/showallemp                           it'))
 
