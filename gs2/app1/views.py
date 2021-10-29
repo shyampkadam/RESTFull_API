@@ -21,4 +21,7 @@ def student_create(request):
             res = {'msg':'Data created'}
             jsondata = JSONRenderer().render(res)
             return HttpResponse(jsondata,content_type='application/json')
+        jsondata = JSONRenderer().render(serializer.errors)
+        return HttpResponse(jsondata,content_type='application/json')
+        
         

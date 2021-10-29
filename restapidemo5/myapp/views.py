@@ -42,7 +42,9 @@ class StudentAPI(View):
 
     def put(self,request,*args,**kwargs):
         jsondata = request.body
+        print(jsondata)
         stream = BytesIO(jsondata)
+        print(stream)
         pythondata = JSONParser().parse(stream)
         id = pythondata.get('id')
         student = Student.objects.get(id=id)
